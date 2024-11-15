@@ -3,10 +3,6 @@
   "name": "Thinking Claude",
   "version": "1.0",
   "description": "Let Claude think. Makes Claude's thinking process expandable and collapsible.",
-  
-  "permissions": [
-    "activeTab"
-  ],
 
   "content_scripts": [
     {
