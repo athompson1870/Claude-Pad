@@ -166,7 +166,8 @@ class CodeBlockCollapser {
 
     container.style.cssText = `
       transition: all 0.3s ease-in-out;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
       max-height: 0;
       opacity: 0;
       padding: 0;
@@ -192,7 +193,7 @@ class CodeBlockCollapser {
       const arrow = toggleBtn.querySelector("svg");
       const label = toggleBtn.querySelector("span");
 
-      container.style.maxHeight = isCollapsed ? "1000px" : "0";
+      container.style.maxHeight = isCollapsed ? "50vh" : "0";
       container.style.opacity = isCollapsed ? "1" : "0";
       container.style.padding = isCollapsed ? "1em" : "0";
 
