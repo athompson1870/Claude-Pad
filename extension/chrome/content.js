@@ -189,19 +189,19 @@ class CodeBlockCollapser {
     }
 
     toggleBtn.addEventListener("click", () => {
-      const isCollapsed = container.style.maxHeight === "0px";
+      const shouldToggleOpen = container.style.maxHeight === "0px";
       const arrow = toggleBtn.querySelector("svg");
       const label = toggleBtn.querySelector("span");
 
-      container.style.maxHeight = isCollapsed ? "50vh" : "0";
-      container.style.opacity = isCollapsed ? "1" : "0";
-      container.style.padding = isCollapsed ? "1em" : "0";
+      container.style.maxHeight = shouldToggleOpen ? "50vh" : "0";
+      container.style.opacity = shouldToggleOpen ? "1" : "0";
+      container.style.padding = shouldToggleOpen ? "1em" : "0";
 
-      arrow.style.transform = `rotate(${isCollapsed ? 180 : 0}deg)`;
+      arrow.style.transform = `rotate(${shouldToggleOpen ? 180 : 0}deg)`;
       if (
         !label.classList.contains(CodeBlockCollapser.CLASSES.THINKING_ANIMATION)
       ) {
-        label.textContent = isCollapsed
+        label.textContent = shouldToggleOpen
           ? "Hide thinking process"
           : "View thinking process";
       }
