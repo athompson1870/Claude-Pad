@@ -2,7 +2,7 @@
 
 ## 2024-11-17
 
-- Created a new v4 (experimental) version of Thinking Claude instructions:
+- Completely rewrite the current v3.5 version into a new v4 (experimental) version of Thinking Claude instructions:
 
     * Delete those too abstract instructions.
 
