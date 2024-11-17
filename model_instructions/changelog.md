@@ -8,4 +8,6 @@
 
     * Turn those vague bullet points into specific complete paragraphs.
 
-    Feel free to give feedback on this new version!
+- Start a new v4-Lite version that is shorter than original v4, but perform similar.
+
+Feel free to test these two new instructions
