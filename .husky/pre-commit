@@ -18,4 +18,9 @@ if ! bun run lint:staged; then
   exit 1
 fi
 
+if ! bun run check-version-sync; then
+  echo "Version sync check failed"
+  exit 1
+fi
+
 # TODO: config this for other extensions too
