@@ -94,7 +94,12 @@ export function InstructionSelect() {
           <SelectTrigger className="inline-flex items-center justify-center relative shrink-0 ring-offset-2 ring-offset-bg-300 ring-accent-main-100 focus-visible:outline-none focus-visible:ring-1 tc-shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none disabled:drop-shadow-none max-w-full min-w-0 pl-1.5 pr-1 h-7 ml-0.5 mr-1 hover:bg-bg-200 hover:border-border-400 border-0.5 text-sm rounded-md border-transparent transition text-text-500 hover:text-text-200 font-tiempos !tc-font-normal tc-gap-x-1">
             <SelectValue placeholder="Let Claude think" />
           </SelectTrigger>
-          <SelectContent className="z-50 bg-bg-200 backdrop-blur-xl border-0.5 border-border-300 rounded-xl min-w-[12rem] overflow-hidden p-1 text-text-200 shadow-[0_0_0_0.5px_rgba(0,0,0,0.1),0_0_20px_rgba(0,0,0,0.05),0_1px_5px_rgba(0,0,0,0.1)] w-64 sm:w-[28rem] md:tc-w-[32rem] !z-30">
+          <SelectContent
+            style={{
+              zIndex: 9999,
+            }}
+            className="z-50 bg-bg-200 backdrop-blur-xl border-0.5 border-border-300 rounded-xl min-w-[12rem] overflow-hidden p-1 text-text-200 shadow-[0_0_0_0.5px_rgba(0,0,0,0.1),0_0_20px_rgba(0,0,0,0.05),0_1px_5px_rgba(0,0,0,0.1)] w-64 sm:w-[28rem] md:tc-w-[32rem] !z-30"
+          >
             <div className="sm:flex justify-between items-center flex-1 text-xs font-medium text-text-300 px-1.5 pt-1 pb-1.5 min-h-5">
               <div className="translate-y-[0.5px]">
                 Which model instruction should Claude use?
